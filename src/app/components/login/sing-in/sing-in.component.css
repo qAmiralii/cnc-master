@@ -8,7 +8,7 @@
   transform: translate(-50%, -50%);
   width: 35vw;
   height: 70vh;
-  z-index: 2;
+  z-index: 3;
   background-color: rgb(255, 255, 255);
   border: 0.5px solid gray;
   border-radius: 5%;
@@ -79,16 +79,16 @@ menu {}
   background-color: rgb(32, 105, 241);
   border: 0;
 }
-.submitB,.singIn:hover{
+.submitB,.singsin:hover{
   cursor: pointer;
 }
 .error{
   background-color: pink;
 }
-.goSignIn{
+.goLogin{
   text-align: right;
 }
-.singIn{
+.login{
   color: white;
   border: 0;
   height: 4vh;

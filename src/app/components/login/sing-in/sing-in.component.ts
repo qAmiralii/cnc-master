@@ -1,17 +1,22 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { SingInComponent } from './sing-in/sing-in.component';
 
 @Component({
-  selector: 'app-login',
-  imports: [FormsModule,SingInComponent],
-  templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
+  selector: 'app-sing-in',
+  imports: [FormsModule],
+  templateUrl: './sing-in.component.html',
+  styleUrl: './sing-in.component.css'
 })
-export class LoginComponent {
+export class SingInComponent {
+onLogin() {
+throw new Error('Method not implemented.');
+}
+goLogin() {
+
+}
   showSignIn: boolean = false;
   goSignIn() {
-    this.showSignIn = !this.showSignIn;
+    this.showSignIn = true;
   }
   ifInputFill = {
     error: false,
@@ -35,9 +40,7 @@ export class LoginComponent {
     this.username = this.password = this.Repassword = "";
   }
   SL: string = "Sign Up"
-  onLogin() {
 
-  }
   username: string = "";
   password: string = "";
   Repassword: string = "";
