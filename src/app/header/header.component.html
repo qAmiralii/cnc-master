@@ -1,0 +1,51 @@
+<div id="headerdiv" class="div-txt">
+  <p id="p1">CNC هنر خلق کردن</p>
+</div>
+<div id="indb">
+  <nav id="menu" class="div-txt">
+    <img id="im" alt="img"
+      src="/Create a Logo Online _ Free Logo Maker & Generator _ TURBOLOGO and 7 more pages - Person 1 - Microsoft​ Edge 8_5_2024 1_37_07 PM (2).png">
+    <div class="gg">
+      <button id="login" (click)="showMenu()">Login | Sing up</button>
+      @if (show) {
+        <div class="p-l" [class.sMenuClick]="show ? true : ifMenuClick">
+        <app-login />
+      </div>
+        }
+    </div>
+    <ul>
+      <li class="nav-li">
+        <a href="#" class="nav-a" id="m-menu">Models
+          <ul>
+            <li>
+              <app-login />
+              <a>CNC Wood</a>
+            </li>
+            <li>
+              <a>CNC Laser</a>
+            </li>
+            <li>
+              <a>3D Model</a>
+            </li>
+          </ul>
+        </a>
+      </li>
+      <li class="nav-li">
+        <a href="about-us.html" class="nav-a">About us</a>
+      </li>
+      <li class="nav-li">
+        <a class="nav-a" >Home</a>
+      </li>
+      <li class="nav-li">
+        <a (click)="openpPage()" class="nav-a">Produts</a>
+      </li>
+      <li class="nav-li">
+        <a href="#" class="nav-a">Support</a>
+      </li>
+    </ul>
+    @if (productsShow) {
+      <app-products/>
+    }
+  </nav>
+</div>
+

@@ -1,0 +1,7 @@
+#db {
+    border: solid rgb(0, 0, 0) 2px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    background-color: rgb(240, 240, 240);
+}

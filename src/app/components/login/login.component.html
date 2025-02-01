@@ -1,0 +1,35 @@
+<div class="topmenu" [class]="ifMenuClick">
+  <div class="menu">
+    <div class="form">
+      <form action="" (submit)="onLogin()">
+        <h2>VERTUS</h2>
+        <div class="main">
+          <p>Start your journey</p>
+          <p class="pLogin">{{SL}} to VERTUS</p>
+          <div class="d-input">
+            <input type="text" class="input" id="username" name="username" [(ngModel)]="username" placeholder="Amir">
+            <p class="pName">name</p>
+          </div>
+          <div class="d-input">
+            <input type="password" class="input" id="password" name="password" [(ngModel)]="password"
+              placeholder="Password">
+            <p class="pName">Password</p>
+          </div>
+          <div class="d-input">
+            <input type="password" class="input" [class]="ifInputFill" id="rePassword" name="password"
+              [required]="Repassword" [(ngModel)]="Repassword" placeholder="Password">
+            <p class="pName">Confirm Password</p>
+          </div>
+          <div class="Login">
+            <button class="submitB" [disabled]="username == '' " (click)="checkUser()"
+              (click)="inputCheck()">Login</button>
+          </div>
+          <div class="check">
+            <button (click)="reset()" [disabled]="username == '' && password == '' && Repassword == '' ">reset</button>
+            <input type="checkbox" id="rememberMe" name="rememberMe"> <label for="rememberMe">rememberMe</label><br><br>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
